@@ -1,3 +1,4 @@
+package gui.main;
 import javax.swing.JFrame;
 
 /**
@@ -5,10 +6,12 @@ import javax.swing.JFrame;
  * @version 1.0
  */
 @SuppressWarnings("serial") 
-public class BudgetTrackerFrame extends JFrame {
-    public BudgetTrackerFrame() {
-        super("Budget Tracker Frame");
-        setBounds(0,0, 800, 600);
+class MainFrame extends JFrame {
+
+    public MainFrame() {
+        super();
+        setBounds(0,0, 600, 400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setTitle("Budget Tracker");
     }
 }

@@ -1,6 +1,6 @@
-package tests.currenciesTests;
+package tests.currencies;
 
-import currencies.types.*;
+import currencies.types.USD;
 
 /**
  * @author Kyle Bye
