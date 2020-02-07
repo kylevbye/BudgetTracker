@@ -9,7 +9,7 @@ public class BudgetHistoryFrame extends JFrame {
 
     BudgetHistoryFrame() {
         super();
-        setText("History");
+        setTitle("History");
     }
 
 }
