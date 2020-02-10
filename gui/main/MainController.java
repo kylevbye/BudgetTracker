@@ -2,7 +2,8 @@ package gui.main;
 
 import java.awt.event.ActionListener;
 
-import javax.swing.SwingConstants;
+import javax.swing.JPanel;
+import java.awt.BorderLayout;
 
 import java.awt.event.ActionEvent;
 
@@ -29,7 +30,11 @@ public class MainController {
         //mainPanel.setBounds(mainFrame.getBounds());
         mainPanel.setSize(mainFrame.getSize());
 
-        mainFrame.add(mainPanel,SwingConstants.CENTER);
+        JPanel emptyPanel = new JPanel();
+        emptyPanel.setSize(300,300);
+
+        mainFrame.add(mainPanel, BorderLayout.CENTER);
+        
     }
 
 }
