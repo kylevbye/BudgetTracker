@@ -5,10 +5,11 @@ import javax.swing.JFrame;
 /**
  * @author Kyle Bye
  */
+@SuppressWarnings("serial")
 public class InputFrame extends JFrame {
 
-    public final int DEPOSIT_TYPE;
-    public final int WITHDRAW_TYPE;
+    public static final int DEPOSIT_TYPE = 0;
+    public static final int WITHDRAW_TYPE = 1;
 
     public InputFrame(int inputFrameType) {
         super();
@@ -25,11 +26,11 @@ public class InputFrame extends JFrame {
 
     }
 
-    private constructDepositFrame() {
+    private void constructDepositFrame() {
         setTitle("Deposit");
     }
 
-    private constructWithdrawFrame() {
+    private void constructWithdrawFrame() {
         setTitle("Withdraw");
     }
 

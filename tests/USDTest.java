@@ -1,4 +1,4 @@
-package tests.currencies;
+package tests;
 
 import currencies.types.USD;
 

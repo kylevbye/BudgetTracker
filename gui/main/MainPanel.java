@@ -1,12 +1,14 @@
 package gui.main;
 
 import javax.swing.BoxLayout;
+import java.awt.BorderLayout;
+import java.awt.FlowLayout;
+import java.awt.Font;
+import java.awt.font.*;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
 
 @SuppressWarnings("serial")
 public class MainPanel extends JPanel {
@@ -19,28 +21,22 @@ public class MainPanel extends JPanel {
 
     public MainPanel() {
         super();
-        setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
+        //setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
+        setLayout(new BorderLayout());
+
+        // JButton Panel
+        MainButtonPanel buttonPanel = new MainButtonPanel();
 
         // Budget Label
         budgetLabel = new JLabel();
+        buttonPanel.setSize(500, 300);
         budgetLabel.setText("$$$");
-        add(budgetLabel);
+        budgetLabel.setHorizontalAlignment(JLabel.CENTER);
+        budgetLabel.setFont(new Font("Times New Roman", Font.BOLD, 40));
 
-        // Deposit Button
-        JButton depositButton = new JButton();
-        depositButton.setText("Desposit");
-        depositButton.addActionListener(
-            new ActionListener() {
-                public void actionPerformed(ActionEvent ae) {
-                    System.out.println("Deposit Button Pressed...");
-                }
-            }
-        );
-        add(depositButton);
+        add(budgetLabel, BorderLayout.CENTER);
 
-        // Withdraw Button
-
-        // History Button
+        add(buttonPanel, BorderLayout.SOUTH);
 
     }
 }

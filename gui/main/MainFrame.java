@@ -1,5 +1,6 @@
 package gui.main;
 import javax.swing.JFrame;
+import java.awt.BorderLayout;
 
 /**
  * @author  Kyle Bye
@@ -13,5 +14,6 @@ class MainFrame extends JFrame {
         setBounds(0,0, 600, 400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setTitle("Budget Tracker");
+        setLayout(new BorderLayout());
     }
 }
