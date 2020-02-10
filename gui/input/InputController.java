@@ -17,7 +17,15 @@ public class InputController {
         composeInputFrame();
     }
 
-    private static void composeInputFrame() {
-        
+    public static void close() {
+        if (inputFrame != null) {
+            inputFrame.setVisible(false);
+            inputFrame.dispose();
+            inputFrame = null;
+        }
+    }
+
+    private static void composeInputFrame() {   
+        inputFrame.setVisible(true);     
     }
 }

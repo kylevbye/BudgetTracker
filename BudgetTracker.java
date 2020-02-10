@@ -1,3 +1,4 @@
+import gui.input.InputController;
 import gui.main.MainController;
 /**
  * @author Kyle Bye
@@ -5,7 +6,8 @@ import gui.main.MainController;
  */
 public class BudgetTracker {
     public static void main(String[] args) {
-        MainController.run();
+        //MainController.run();
+        InputController.runDeposit();
     }
     
 }
